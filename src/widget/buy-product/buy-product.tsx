@@ -2,11 +2,14 @@
 import React from 'react';
 import MainButton from "@/shared/ui/main-button";
 import cl from './buy-product.module.css'
-
-const BuyProduct = () => {
+type BuyProductProps = {
+    onClick?: () => void;
+}
+const BuyProduct = (props: BuyProductProps) => {
+    const { onClick } = props
     return (
         <div>
-            <MainButton label={'Купить'} type={'button'} onClick={() => {}}/>
+            <MainButton label={'Купить'} type={'button'} onClick={onClick}/>
             <div>
                 <p className={cl.buyDesc}>Нажимая кнопку «Купить», Пользователь соглашается на разовое списание
                     денежных средств для получения пожизненного доступа к приложению.

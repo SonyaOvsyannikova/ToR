@@ -25,8 +25,6 @@
     border: 2px solid var(--color-grey);
     background-color: var(--color-dark-grey);
     border-radius: 40px;
-    /*max-height: clamp(118px, 33vw, 335px);*/
-    /*height: 100%;*/
     padding: 20px;
     height: 100%;
 }
@@ -43,30 +41,10 @@
     }
 }
 
-/*.badgeContainer {*/
-/*    position: absolute;*/
-/*    top: -1px;*/
-/*    left: 15px;*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    padding: 0 20px;*/
-/*    pointer-events: none;*/
-/*    z-index: 10;*/
-/*}*/
-/*@media (min-width: 1280px) {*/
-/*    .badgeContainer {*/
-/*        left: 10px;*/
-/*        display: flex;*/
-/*        flex-direction: row;*/
-/*        column-gap: 20px;*/
-/*    }*/
-/*}*/
-
 .badgeContainer {
     position: absolute;
     top: -1px;
-    left: 0;
+    left: 10px;
     right: 0;
     display: flex;
     justify-content: space-between;
@@ -81,7 +59,7 @@
         justify-content: flex-end;
         gap: 16px;
         left: auto;
-        right: 20px;
+        right: 40px;
         width: auto;
         padding: 0;
     }
