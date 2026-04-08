@@ -1,0 +1,112 @@
+.agreeContent {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 320px) {
+    .agreeContent {
+        margin-bottom: clamp(16px, 16px + (20 - 16) * ((100vw - 320px) / (375 - 320)), 20px);
+    }
+}
+
+@media (min-width: 375px) {
+    .agreeContent {
+
+        margin-top: clamp(24px, 5vw, 30px);
+        margin-bottom: clamp(16px, 20px + (16 - 20) * ((100vw - 375px) / (1920 - 375)), 20px);
+    }
+}
+
+@media (min-width: 1280px) {
+    .agreeContent {
+        margin-top: clamp(30px, 2.5vw, 32px);
+
+    }
+}
+
+@media (min-width: 1920px) {
+    .agreeContent {
+        margin-top: 32px;
+    }
+}
+
+.checkBox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.checkboxContainer {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+@media (min-width: 1280px) {
+    .customCheckbox, .customCheckbox {
+        width: 32px;
+        height: 32px;
+    }
+
+    .checkboxContainer, .customCheckbox {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.customCheckbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid var(--color-grey);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    padding: 8px;
+}
+
+
+.checkboxContainer:hover .customCheckbox {
+    border-color: var(--color-dark-grey);
+}
+
+.checkBox:checked + .customCheckbox {
+    background-color: transparent;
+    border-color: var(--color-dark-grey);;
+}
+
+.checkBox:checked + .customCheckbox::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: 8px;
+    width: 13px;
+    height: 19px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    color: var(--color-accent);
+}
+
+.agreeDesc, .agreeLink {
+    color: var(--color-grey-font);
+}
+.agreeLink {
+    text-decoration: underline;
+}
+.agreeDesc {
+    max-width: 748px
+
+}
+@media (max-width: 1280px) {
+    .agreeDesc {
+        max-width: 250px;
+        width: 100%;
+    }
+}

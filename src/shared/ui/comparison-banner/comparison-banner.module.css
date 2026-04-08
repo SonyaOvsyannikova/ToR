@@ -1,0 +1,10 @@
+.comparison-banner {
+    width: 499px;
+    margin-top: clamp(10px, 0.78vw, 20px);
+}
+
+@media (max-width: 1280px) {
+    .comparison-banner {
+        width: 100%;
+    }
+}

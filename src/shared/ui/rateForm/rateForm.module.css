@@ -1,0 +1,19 @@
+.rateForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 748px;
+}
+
+@media (max-width: 375px) {
+    .rateForm {
+        max-width: 343px;
+    }
+}
+
+@media (max-width: 320px) {
+    .rateForm {
+        max-width: 288px;
+    }
+}

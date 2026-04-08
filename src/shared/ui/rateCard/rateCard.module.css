@@ -1,0 +1,219 @@
+.rateCard {
+    position: relative;
+}
+
+.hitCard {
+    border: 1px solid var(--color-accent);
+    border-radius: 34px;
+    padding: 20px;
+}
+
+@media (min-width: 375px) {
+    .hitCard {
+        padding: 20px clamp(22px, 5vw, 122px) 20px clamp(20px, 4vw, 80px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .hitCard {
+        padding: 34px 122px 30px 80px;
+    }
+}
+
+
+.regularCard {
+    border: 2px solid var(--color-grey);
+    background-color: var(--color-dark-grey);
+    border-radius: 40px;
+    /*max-height: clamp(118px, 33vw, 335px);*/
+    /*height: 100%;*/
+    padding: 20px;
+    height: 100%;
+}
+
+@media (min-width: 375px) {
+    .regularCard {
+        padding: clamp(20px, 4vw, 70px) 18px clamp(20px, 3vw, 44px) 18px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .regularCard {
+        padding: 70px 18px 44px 18px;
+    }
+}
+
+/*.badgeContainer {*/
+/*    position: absolute;*/
+/*    top: -1px;*/
+/*    left: 15px;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 0 20px;*/
+/*    pointer-events: none;*/
+/*    z-index: 10;*/
+/*}*/
+/*@media (min-width: 1280px) {*/
+/*    .badgeContainer {*/
+/*        left: 10px;*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        column-gap: 20px;*/
+/*    }*/
+/*}*/
+
+.badgeContainer {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+@media (max-width: 1280px) {
+    .badgeContainer {
+        justify-content: flex-end;
+        gap: 16px;
+        left: auto;
+        right: 20px;
+        width: auto;
+        padding: 0;
+    }
+}
+
+.discountBadge {
+    background: var(--color-badge-sale);
+    padding: clamp(3px, 1vw, 5px) clamp(5px, 1vw, 8px);
+    color: var(--color-white);
+    border-radius: 0 0 8px 8px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.hitBadge {
+    font-size: 22px;
+    color: var(--color-accent);
+}
+
+.hitLayout {
+    display: flex;
+    flex-direction: row;
+    column-gap: clamp(30px, 5vw, 40px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.regularLayout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+@media (max-width: 1280px) {
+    .regularLayout {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(12px, 2vw, 30px);
+}
+.hitCardContentWrapper {
+
+}
+
+.hitLayout .contentWrapper {
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.regularLayout .contentWrapper {
+    align-items: center;
+}
+
+.rateCardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hitLayout .rateCardBody {
+    align-items: flex-start;
+}
+
+.regularLayout .rateCardBody {
+    align-items: center;
+}
+
+.rateCardTitle {
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.rateCardPriceNewHit {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: clamp(30px, 2.5vw, 48px);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.rateCardPriceNew {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.rateCardPriceOld {
+    text-decoration: line-through;
+    color: var(--color-light-grey);
+    font-size: 20px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.rateCardDesc {
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    max-width: clamp(111px, 30vw, 220px);
+}
+
+
+.hitLayout .rateCardDesc {
+    max-width: 280px;
+    text-align: left;
+}
+
+.regularLayout .rateCardDesc {
+    text-align: start;
+}
+
+
+.shortDescription {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fullDescription {
+        display: none;
+    }
+
+    .shortDescription {
+        display: inline;
+    }
+}

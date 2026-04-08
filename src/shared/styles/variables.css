@@ -1,0 +1,20 @@
+:root {
+
+    --color-background: #232829;
+    --color-header: #1D5B43;
+    --color-header-timer: #FFBB00;
+    --color-guarantee-title: #81FE95;
+    --color-badge-sale: #FD5656;
+    --color-banner-background: #2D3233;
+    --color-accent: #FDB056;
+    --color-light-grey: #919191;
+    --color-grey: #484D4E;
+    --color-dark-grey: #313637;
+    --color-grey-font: #CDCDCD;
+    --color-white: #FFFFFF;
+
+    --border-radius-banner: clamp(16px, 1vw, 20px);
+    --container-width: 50px;
+    --container-padding-x: 50px;
+
+}

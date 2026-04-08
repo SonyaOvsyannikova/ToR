@@ -1,0 +1,4 @@
+.buyDesc {
+    color: var(--color-grey-font);
+    font-size: clamp(14px, 2vw, 10px);
+}

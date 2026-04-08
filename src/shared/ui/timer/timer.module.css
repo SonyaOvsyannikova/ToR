@@ -1,0 +1,23 @@
+.warning {
+    color: red;
+    animation: blink 0.5s ease-in-out infinite;
+}
+
+.normal {
+    color: var(--color-headerTimer);
+}
+
+.normal, .warning {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}

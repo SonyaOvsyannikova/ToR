@@ -1,0 +1,29 @@
+.title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+    .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 375px) {
+    .title {
+        margin-top: clamp(20px, calc(20px + (50 - 20) * ((100vw - 375px) / (1920 - 375))), 50px);
+        margin-bottom: clamp(20px, calc(20px + (110 - 20) * ((100vw - 375px) / (1920 - 375))), 110px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .title {
+        margin-top: 50px;
+        margin-bottom: 110px;
+    }
+}
+.titleLink {
+    color: var(--color-accent);
+}
